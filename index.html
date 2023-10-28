@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/particles.js"></script>
+    <script src="assets/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dyykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Jake Levy</title>
+  </head>
+  <body>
+    <!-- Splash -->
+    <div id="particles-js"></div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">🍜</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-custom"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#section--about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#section--projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#section--contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item d-lg-none d-xl-none">
+              <a
+                class="nav-link nav-link-custom"
+                href="https://github.com/tokenAPIguy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item d-lg-none d-xl-none">
+              <a
+                class="nav-link nav-link-custom"
+                href="assets/Resume-Jake-Levy.pdf"
+                download
+                >Download CV</a
+              >
+            </li>
+          </ul>
+          <p class="float-end my-3 mx-5 d-none d-lg-block d-xl-block">
+            <a
+              href="https://github.com/tokenAPIguy"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2.00.27 1.53-1.04 2.20-.82 2.20-.82.44 1.10.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.20 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                /></svg
+            ></a>
+            <a
+              href="assets/Resume-Jake-Levy.pdf"
+              title="resume"
+              class="btn--custom download-cv"
+              download
+              >Download CV</a
+            >
+          </p>
+        </div>
+      </div>
+    </nav>
+    <div class="canvas d-flex align-items-center justify-content-around">
+      <div class="container pt-5 mt-5">
+        <div class="row align-items-center justify-content-around m-5">
+          <div class="col-md-4 align-items-center d-none d-lg-block d-xl-block">
+            <img
+              src="assets/images/newprofile.png"
+              id="me"
+              alt="selfie"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6" align="center">
+            <span class="display-3"><p class="greeting">Hi there!👋</p></span>
+            <span class="display-5"
+              ><p class="float-end">
+                My name is Jake. <br />I'm a web developer.
+              </p></span
+            >
+            <p class="float-end my-3 mx-5">
+              <a href="#section--about" class="btn--custom">learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content-->
+    <section id="section--about">
+      <div class="container py-5">
+        <div class="row align-items-center justify-content-around about-me">
+          <div class="col-md-7">
+            <span
+              ><p class="text--header pb-3">a bit about me</p>
+              <p class="text--body pb-3">I'm Jake 👋</p>
+              <p class="text--body pb-3">
+                My interest in software engineering was sparked by a desire to
+                bring <span class="em">creative</span> and
+                <span class="em">unique</span> ideas to life in the digital
+                realm.
+              </p>
+              <p class="text--body pb-3">
+                One of the things I love most about web development is that
+                there's so much to <span class="em">learn</span>. Every project
+                I work on is an opportunity to grow and refine my abilities. I
+                thrive on <span class="em">problem-solving</span> and the
+                satisfaction of seeing a project come to life on the web.
+              </p>
+              <p class="text--body">
+                I'm eager to <span class="em">collaborate</span>,
+                <span class="em">solve problems</span>, and
+                <span class="em">contribute</span> to exciting projects 😊
+              </p></span
+            >
+          </div>
+          <div class="col-md-3 d-none d-lg-block d-xl-block">
+            <img
+              src="assets/images/bmo_dance.gif"
+              alt=""
+              class="img-fluid flip"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section--projects" class="py-5">
+      <div class="container py-5">
+        <span class="text--header"
+          ><p class="greeting pt-3 d-none d-md-block d-lg-block d-xl-block">
+            Projects
+          </p></span
+        >
+        <div
+          class="row project--item align-items-center justify-content-around"
+        >
+          <div class="col-md-7">
+            <span class="text--header">
+              <a
+                href="https://commodum.testbench.cloud/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><p class="project--title btn--custom-2">Commodum</p>
+              </a>
+
+              <p class="project--desc technologies">React JSX Supabase</p>
+              <p class="project--desc">
+                A full-stack, CRUD web application built to store one-liners and
+                other useful commands.
+              </p>
+              <a
+                href="https://github.com/tokenAPIguy/Commodum"
+                title="Commodum"
+                class="btn--custom-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
+              <p class="project--desc pt-2"></p>
+            </span>
+          </div>
+          <div class="col-md-5 project-sample">
+            <a
+              href="https://commodum.testbench.cloud/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/commodum_sample.png"
+                alt="Commodum"
+                class="img-fluid project--img"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="row my-5 project--item align-items-center justify-content-around"
+        >
+          <div class="col-md-7">
+            <span class="text--header"
+              ><a
+                href="https://api.testbench.cloud/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><p class="project--title btn--custom-2">Kinsta API</p>
+              </a>
+              <p class="project--desc technologies">JavaScript HTML CSS</p>
+              <p class="project--desc">
+                Using the Kinsta API to fetch data and perform CRUD operations.
+              </p>
+              <a
+                href="https://github.com/tokenAPIguy/KinstaAPI-GUI"
+                title="Kinsta API"
+                class="btn--custom-3"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View Code</a
+              >
+              <p class="project--desc pt-2">
+                <a
+                  href="https://github.com/tokenAPIguy/KinstaAPI-GUI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                ></a></p
+            ></span>
+          </div>
+          <div class="col-md-5">
+            <a
+              href="https://api.testbench.cloud/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="assets/images/kinsta_api_sample.png"
+                alt="Kinsta API"
+                class="img-fluid project--img"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="row mb-5 project--item align-items-center justify-content-around"
+        >
+          <div class="col-md-7">
+          <span class="text--header"
+            ><a
+              href="https://dice.testbench.cloud/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><p class="project--title btn--custom-2">Dice Game</p>
+            </a>
+            <p class="project--desc technologies">JavaScript HTML CSS</p>
+            <p class="project--desc">
+              Interpretation of “Pig” - a betting game played with dice.
+            </p>
+            <a
+              href="https://github.com/tokenAPIguy/Dice_Game"
+              title="Dice Game"
+              class="btn--custom-3"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Code</a
+            >
+            <p class="project--desc pt-2">
+              <a
+                href="https://github.com/tokenAPIguy/Dice_Game"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a></p
+          ></span>
+        </div>
+        <div class="col-md-5">
+          <a
+            href="https://dice.testbench.cloud/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="assets/images/dice_game_sample.png"
+              alt="Dice Game"
+              class="img-fluid project--img"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="section--contact">
+      <div class="container">
+        <div class="row py-5 align-items-center justify-content-around">
+          <div
+            class="col-6 contact-form-bg p-5 d-none d-md-block d-lg-block d-xl-block"
+          >
+            <div class="container contact-form p-5">
+              <form
+                class="mb-5"
+                id="contactForm"
+                name="contactForm"
+                action="https://formspree.io/f/myyqovbj"
+                method="POST"
+              >
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      id="name"
+                      placeholder="Your name"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group pt-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group pt-2">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group pt-2">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="7"
+                      placeholder="Write your message"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row float-end">
+                  <div class="col-12 pt-5">
+                    <input
+                      type="submit"
+                      value="Send Message"
+                      class="btn--custom"
+                    />
+                    <span class="submitting"></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col d-md-none d-lg-none">
+            <span
+              ><p class="text--body pb-3 text-light">
+                If you're interested in working together or if you have any
+                questions, feel free to reach out.
+              </p>
+
+              <p class="text--body pb-3 text-light">
+                Let's create something amazing! 👌
+              </p>
+            </span>
+            <div class="row align-items-center justify-content-start mt-5">
+              <div class="col-2 justify-content-end">
+                <a
+                  href="https://www.linkedin.com/in/jake-levy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-linkedin text-light social-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    /></svg
+                ></a>
+              </div>
+              <div class="col-2 social">
+                <a
+                  href="https://github.com/tokenAPIguy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-github text-light"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-none d-md-block d-lg-block">
+            <span
+              ><p class="text--body pb-3 text-light">
+                If you're interested in working together or if you have any
+                questions, feel free to reach out.
+              </p>
+
+              <p class="text--body pb-3 text-light">
+                Let's create something amazing! 👌
+              </p>
+            </span>
+            <div class="row align-items-center justify-content-start mt-5">
+              <div class="col-2 justify-content-end">
+                <a
+                  href="https://www.linkedin.com/in/jake-levy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-linkedin text-light social-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                    /></svg
+                ></a>
+              </div>
+              <div class="col-2 social">
+                <a
+                  href="https://github.com/tokenAPIguy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    fill="currentColor"
+                    class="bi bi-github text-light"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
