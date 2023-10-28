@@ -134,7 +134,9 @@
 #section--projects {
   background: #f1ebe7;
 }
-
+.nav-link {
+  color: #433e3f !important;
+}
 .navbar-bg {
   background-color: #f1ebe7;
 }
