@@ -83,8 +83,17 @@
 .flip {
   transform: scaleX(-1);
 }
+.form-control {
+  border: none;
+}
 .greeting {
   color: #ee6123;
+}
+.navbar-bg {
+  background-color: #f1ebe7;
+}
+.nav-link {
+  color: #433e3f !important;
 }
 .nav-link:hover {
   color: #ee6123 !important;
@@ -133,10 +142,4 @@
 }
 #section--projects {
   background: #f1ebe7;
-}
-.nav-link {
-  color: #433e3f !important;
-}
-.navbar-bg {
-  background-color: #f1ebe7;
 }
