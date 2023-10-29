@@ -62,6 +62,7 @@
 .contact-form-bg {
   background: #f1ebe7;
   min-height: 50vh;
+  box-shadow: 9px 9px #141313;
 }
 .bi-github {
   color: #433e3f;
